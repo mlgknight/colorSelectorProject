@@ -1,0 +1,113 @@
+body {
+    margin: 1rem;
+    padding: 0;
+    background-color: rgb(38, 39, 39);
+    display: flex;
+    justify-content: center;
+    font-family: "Anton SC", sans-serif;
+}
+
+.container form {
+    display: flex;
+    gap: .5rem;
+    padding: 1rem;
+    font-family: inherit;
+}
+
+.color-section li p{
+    margin-left: 1rem;
+
+}
+
+.container {
+    background-color: #FFFDFE;
+    width: 25rem;
+    height: 26rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.color-section ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+
+.color{
+    cursor: pointer;
+    padding-bottom: 13rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+
+.color-pick {
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(207, 207, 207);
+}
+
+select{
+    height: 2rem;
+    width: 13rem;
+}
+
+
+button {
+    height: 2rem;
+    width: 7rem;
+    font-size: 0.7rem;
+}
+
+select, button {
+    cursor: pointer;
+    border-color: #D1D5DB;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: 900;
+}
+
+.hover-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hover-text {
+    visibility: hidden;
+    font-size: small;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; 
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-shadow: 1px 1px 2px black, 3px 3px 5px black;
+  }
+  
+  .hover-container:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+  }
+.hover-text:hover {
+    color: rgb(196, 196, 196);
+}
+  
+

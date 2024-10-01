@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorProject</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="container" id="container">
+            <form id="color-form" action="/submit-color">
+                <input aria-label="colorPicker" class="color-pick" type="color" id="colorPicker" name="colorPicker">
+        
+                
+                <select aria-label="color-scheme" id="colorDropdown" name="colorDropdown">
+                    <option value="monochrome">monochrome</option>
+                    <option value="monochrome-dark">monochrome-dark</option>
+                    <option value="monochrome-light">monochrome-light</option>
+                    <option value="analogic">analogic</option>
+                    <option value="complement">complement</option>
+                    <option value="analogic-complement">analogic-complement</option>
+                    <option value="triad">triad</option>
+                    <option value="quad">quad</option>
+                    
+                </select>
+        
+                <button type="submit">Get color scheme</button>
+            </form>
+
+            <div class="color-section" id="color-section">
+                <ul>
+                    <li>
+                        <div class="hover-container color" id="color">
+                            <span class="hover-text">Copy Color Hex</span>
+                        </div>
+                        <p id="hex-code" class="hex-code"></p>
+                    </li>
+                    <li>
+                        <div class="hover-container color" id="color2">
+                            <span class="hover-text">Copy Color Hex</span>
+
+                        </div>
+                        <p id="hex-code2"  class="hex-code"></p>
+                    </li>
+                    <li>
+                        <div class="hover-container color" id="color3">
+                            <span class="hover-text">Copy Color Hex</span>
+
+                        </div>
+                        <p id="hex-code3" class="hex-code"></p>
+                    </li>
+                    <li>
+                        <div class="hover-container color" id="color4">
+                            <span class="hover-text">Copy Color Hex</span>
+
+                        </div>
+                        <p id="hex-code4" class="hex-code"></p>
+                    </li>
+                    <li>
+                        <div class="hover-container color" id="color5">
+                            <span class="hover-text">Copy Color Hex</span>
+
+                        </div>
+                        <p id="hex-code5" class="hex-code"></p>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
